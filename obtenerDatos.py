@@ -70,7 +70,7 @@ class datos:
         coleccion = base_de_datos["anuncios"]
 
         # Leer el JSON y cargar los datos
-        with open("datos_anuncios.json") as f:
+        with open("datos_anuncios.json", encoding='utf-8', errors='ignore') as f:
             datos = json.load(f)
 
         # Actualizar cada anuncio en la colección
